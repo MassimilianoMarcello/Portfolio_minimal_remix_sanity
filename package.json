@@ -2,8 +2,8 @@
   "name": "sanity-template-remix-clean",
   "private": true,
   "scripts": {
-    "dev": "pnpm -r dev",
-    "format": "prettier --cache --write ."
+"dev": "pnpm -r dev & sass --watch app/styles/main.scss:app/styles/main.css",
+  "format": "prettier --cache --write ."
   },
   "prettier": {
     "plugins": [
@@ -16,5 +16,8 @@
     "prettier": "3.3.3",
     "prettier-plugin-packagejson": "2.5.3"
   },
-  "packageManager": "pnpm@9.12.2"
+  "packageManager": "pnpm@9.12.2",
+  "dependencies": {
+    "sass": "^1.80.4"
+  }
 }

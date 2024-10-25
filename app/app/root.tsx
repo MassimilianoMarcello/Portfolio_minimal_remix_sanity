@@ -11,6 +11,7 @@ import {
   useLoaderData,
 } from '@remix-run/react'
 import { Suspense, lazy } from 'react'
+import Navbar from './components/Navbar'
 
 const LiveVisualEditing = lazy(() => import('~/components/LiveVisualEditing'))
 
@@ -49,6 +50,7 @@ export default function App() {
         <Links />
       </head>
       <body>
+      <Navbar />
         <div className="container">
           <header className="header">
             <Link className="header__title" to="/">
