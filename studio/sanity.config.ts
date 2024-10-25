@@ -44,10 +44,10 @@ const locate: DocumentLocationResolver = (params, context) => {
 }
 
 export default defineConfig({
-  name: 'project-name',
-  title: 'Project Name',
-  projectId,
-  dataset,
+  name: 'default',
+  title: 'remix_sanity_minimal_portfolio',
+  projectId: 'qpv8frw8',
+  dataset: 'production',
   plugins: [
     structureTool(),
     presentationTool({
